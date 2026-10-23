@@ -1,0 +1,15 @@
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\bin\Debug\net5.0\StatHockey.APILayer.deps.json
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\bin\Debug\net5.0\StatHockey.APILayer.dll
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\bin\Debug\net5.0\ref\StatHockey.APILayer.dll
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\bin\Debug\net5.0\StatHockey.APILayer.pdb
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\bin\Debug\net5.0\StatHockey.BusinessLayer.dll
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\bin\Debug\net5.0\StatHockey.BusinessLayer.pdb
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\net5.0\StatHockey.APILayer.csprojAssemblyReference.cache
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\net5.0\StatHockey.APILayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\net5.0\StatHockey.APILayer.AssemblyInfoInputs.cache
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\net5.0\StatHockey.APILayer.AssemblyInfo.cs
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\net5.0\StatHockey.APILayer.csproj.CoreCompileInputs.cache
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\net5.0\StatHockey.APILayer.csproj.CopyComplete
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\net5.0\StatHockey.APILayer.dll
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\net5.0\ref\StatHockey.APILayer.dll
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\net5.0\StatHockey.APILayer.pdb

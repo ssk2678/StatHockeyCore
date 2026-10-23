@@ -1,0 +1,12 @@
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.BusinessLayer\bin\Debug\net5.0\StatHockey.BusinessLayer.deps.json
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.BusinessLayer\bin\Debug\net5.0\StatHockey.BusinessLayer.dll
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.BusinessLayer\bin\Debug\net5.0\ref\StatHockey.BusinessLayer.dll
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.BusinessLayer\bin\Debug\net5.0\StatHockey.BusinessLayer.pdb
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.BusinessLayer\obj\Debug\net5.0\StatHockey.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.BusinessLayer\obj\Debug\net5.0\StatHockey.BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.BusinessLayer\obj\Debug\net5.0\StatHockey.BusinessLayer.AssemblyInfo.cs
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.BusinessLayer\obj\Debug\net5.0\StatHockey.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.BusinessLayer\obj\Debug\net5.0\StatHockey.BusinessLayer.dll
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.BusinessLayer\obj\Debug\net5.0\ref\StatHockey.BusinessLayer.dll
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.BusinessLayer\obj\Debug\net5.0\StatHockey.BusinessLayer.pdb
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.BusinessLayer\obj\Debug\net5.0\StatHockey.BusinessLayer.csprojAssemblyReference.cache

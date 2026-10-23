@@ -1,0 +1,32 @@
+[
+  {
+    "outputFileName": "wwwroot/css/statHockey.min.css",
+    "inputFiles": [
+      "wwwroot/css/statHockey.css",
+      "wwwroot/css/datepicker.min.css",
+      "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/statHockey.min.js",
+    "inputFiles": [
+      //"wwwroot/js/Common.js",
+      //"wwwroot/js/datepicker.js",
+      //"wwwroot/js/modernizr-2.6.2.js",
+      //"wwwroot/js/moment.js",
+      //"wwwroot/js/moment-with-locales.js",
+      //"wwwroot/js/respond.js",
+      //"wwwroot/js/StatHockey.js",
+      //"wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      //"wwwroot/lib/jQuery/dist/jQuery.js",
+      //"wwwroot/lib/jQuery-validation/dist/additional-methods.js",
+      //"wwwroot/lib/jQuery-validation/dist/jQuery.validate.js",
+      //"wwwroot/lib/jQuery-validation-unobtrusive/dist/jQuery.validate.unobtrusive.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]

@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+    
+}
+
+@*<div id="linksDiv">
+    <div id="linksHolder">
+        <div class="links">
+            <div id="playersLink" class="hockeyMainBlock playersLink"><a href="#"><img src="Content/images/playersRS.png" /></a></div>
+            <div id="gamesLink" class="hockeyMainBlock gamesLink"><a href="#"><img src="Content/images/gamesRS.png" /></a></div>
+            <div id="teamsLink" class="hockeyMainBlock teamsLink"><a href="#"><img src="Content/images/teamsRS.png" /></a></div>
+        </div>
+    </div>
+</div>*@
+<div id="graphicDiv">
+    @*<div id="rhpLeft" class="hockeyMainBlock"><img src="Content/images/redhockeyplayerleftsm.png" /></div>*@
+    @*<div id="videoDiv">*@
+    <video id="puckLoadingVideo" autoplay=autoplay muted=muted>
+        <source src="~/images/puckDropTrimmedRS.mp4" type="video/mp4" />
+    </video>
+    @*</div>*@
+    @*<div id="rhpRight" class="hockeyMainBlock"><img src="Content/images/redhockeyplayerRightSM.png" /></div>*@
+</div>
+<div id="statOptions">
+    <div id="playerOption">@Html.Partial("_PlayerPartialView")</div>
+    <div id="gameOption">@Html.Partial("_GamePartialView")</div>
+    <div id="teamOption">@Html.Partial("_TeamPartialView")</div>
+</div>
+
+<script>
+    var selectionOption = '@ViewBag.SelectionOption';
+</script>

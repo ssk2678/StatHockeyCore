@@ -1,0 +1,77 @@
+﻿@model  StatHockey.Models.TeamInfoViewModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutTwo.cshtml";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>TeamDetailView</title>
+</head>
+<body>
+    <div id="teamDetail" class="detailView">@Html.Partial("~/Views/Team/_TeamDetailsPartialView.cshtml", Model)</div>
+    <div id="teamOption" class="searchOnDetail">@Html.Partial("~/Views/Home/_TeamPartialView.cshtml")</div>
+</body>
+</html>
+
+<script>
+
+    window.onload = function () {
+        //document.getElementById("teamsDetailLink").onclick = function () {
+            //if (document.getElementById("teamSearch").firstChild.innerHTML == "") {
+        GetCurrentTeams(MyAppUrlSettings.teamDataAppUrl).then(function (response) {
+            //console.log("Success!", response);                                  
+
+            let teamsObj = JSON.parse(response);
+            let teamLinksTableString = ReturnTeamLogoTableString(teamsObj["Teams"]);
+
+            document.getElementById("currentTeamsTableDiv").innerHTML = teamLinksTableString;
+
+            // Create and append select list
+            var selectList = document.createElement("select");
+            selectList.id = "seasonSelect";
+
+            // Create and append the options
+            //for (var i = 0; i < array.length; i++) {
+            var option = document.createElement("option");
+            option.value = 0;
+            option.text = "Select a season...";
+            selectList.appendChild(option);
+            selectList.addEventListener('change', function (data) {
+                //alert('changed');
+
+                var teamLogoImageLinks = document.getElementsByClassName("teamLogoImageLink");
+                for (var link in teamLogoImageLinks) {
+                    if (teamLogoImageLinks[link].href.indexOf("season") == -1)
+                        teamLogoImageLinks[link].href = teamLogoImageLinks[link].href.concat("&season=" + selectList.options[selectList.selectedIndex].value);
+                    else {
+                        var seasonEqualCharPos = teamLogoImageLinks[link].href.lastIndexOf("=");
+                        teamLogoImageLinks[link].href = teamLogoImageLinks[link].href.substring(0, seasonEqualCharPos).concat("=" + selectList.options[selectList.selectedIndex].value);
+                    }
+                }
+
+            });
+            //}
+
+            var label = document.createElement("label");
+            label.innerHTML = "Pick a season:"
+            label.htmlFor = "seasonSelect";
+            label.className = "teamSearchLabels";
+
+            document.getElementById("currentTeamsTableDiv").prepend(selectList);
+            document.getElementById("currentTeamsTableDiv").prepend(label);
+
+        }, function (error) {
+            //console.error("Failed!", error);
+        }).then(function (response) {
+            let seasonsDD = document.getElementById("seasonSelect");
+            FillSeasonDropDown(seasonsDD);
+        });
+            //}
+            document.getElementById("currentTeamsTableDiv").style.display = 'block';
+        //}
+    }
+
+
+</script>

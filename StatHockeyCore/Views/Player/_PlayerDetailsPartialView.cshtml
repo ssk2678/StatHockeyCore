@@ -1,0 +1,93 @@
+﻿@model StatHockey.Models.PlayerInfoViewModel
+@using StatHockeyCore; 
+@using System.Reflection;
+@using System.ComponentModel;
+@using System.ComponentModel.Design;
+@using Microsoft.AspNetCore.Mvc.ViewFeatures;
+@using Microsoft.AspNetCore.Html;
+<div class="emptyDiv"></div>
+
+<div>
+    <div class="card card-automargin">
+        <div class="card-container">
+            <h3>@Model.PlayerInfo.PlayerGeneralInfo[0].FullName</h3>
+            <img src="@(Model.PlayerInfo.PlayerImageUrl)"/>
+            <dl>
+                <dt>First Name:</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].FirstName ?? "N/A")</dd>
+                <dt>Last Name:</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].LastName ?? "N/A")</dd>
+                <dt>Primary Number:</dt>
+                <dd>@Model.PlayerInfo.PlayerGeneralInfo[0].PrimaryNumber</dd>
+                <dt>Birth Date:</dt>
+                <dd>@Model.PlayerInfo.PlayerGeneralInfo[0].BirthDate.ToShortDateString()</dd>
+                <dt>Current Age:</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].CurrentAge.ToString() == "0" ? "N/A" : Model.PlayerInfo.PlayerGeneralInfo[0].CurrentAge.ToString())</dd>
+                <dt>Birth City:</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].BirthCity ?? "N/A")</dd>
+                <dt>Birth State:</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].BirthStateProvince ?? "N/A")</dd>
+                <dt>Birth Country:</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].BirthCountry ?? "N/A")</dd>
+                <dt>Nationality:</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].Nationality ?? "N/A")</dd>
+                <dt>Height:</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].Height ?? "N/A")</dd>
+                <dt>Weight:</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].Weight + " Ib")</dd>
+                <dt>Active</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].Active ? "Yes" : "No")</dd>
+                <dt>Alternative Captain:</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].AlternativeCaptain ? "Yes" : "No")</dd>
+                <dt>Captain:</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].Captain ? "Yes" : "No")</dd>
+                <dt>Rookie:</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].Rookie ? "Yes" : "No")</dd>
+                <dt>Shoots/Catches:</dt>
+                <dd>@Model.PlayerInfo.PlayerGeneralInfo[0].ShootsCatches</dd>
+                <dt>Roster Status:</dt>
+                <dd>@Model.PlayerInfo.PlayerGeneralInfo[0].RosterStatus</dd>
+                <dt>Current Team:</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].CurrentTeam?.Name ?? "Retired")</dd>
+                <dt>Primary Position</dt>
+                <dd>@(Model.PlayerInfo.PlayerGeneralInfo[0].PrimaryPosition?.Name ?? "N/A")</dd>
+            </dl>
+        </div>
+    </div>
+    @*<div class="emptyDiv"></div>*@
+    <div class="card card-automargin">
+        <div class="card-container">
+            <h3>Player Statistics</h3>
+            <h4>@($"{Model.PlayerInfo.PlayerSeasonStats[0].Splits[0].Season}") Season</h4>
+
+            <table class="center-table">
+                @if (Model.PlayerInfo.PlayerSeasonStats == null)
+                {
+                    <tr>
+                        <td colspan="2">Not Available</td>
+                    </tr>
+                }
+                else
+                {
+
+                    PropertyInfo[] statProperties = typeof(StatHockey.BusinessLayer.BOImplementation.PlayerStat).GetProperties();
+                    Dictionary<string, string> statPropDisplayNames = TypeDescriptor.GetProperties(typeof(StatHockey.BusinessLayer.BOImplementation.PlayerStat)).Cast<PropertyDescriptor>().ToDictionary(p => p.Name, p => p.DisplayName);
+
+                    foreach (PropertyInfo property in statProperties)
+                    {
+
+                        <tr>
+                            <td>@statPropDisplayNames[@property.Name]</td>
+                            <td>@(property.GetValue(Model.PlayerInfo.PlayerSeasonStats[0].Splits[0].Stat) ?? "-")</td>
+
+                        </tr>
+
+                    }
+                }
+
+            </table>
+        </div>
+    </div>
+</div>
+<div class="emptyDiv"></div>
+

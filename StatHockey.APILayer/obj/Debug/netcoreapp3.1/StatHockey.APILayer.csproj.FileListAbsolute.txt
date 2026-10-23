@@ -1,0 +1,13 @@
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\netcoreapp3.1\StatHockey.APILayer.AssemblyInfoInputs.cache
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\netcoreapp3.1\StatHockey.APILayer.AssemblyInfo.cs
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\netcoreapp3.1\StatHockey.APILayer.csproj.CoreCompileInputs.cache
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\bin\Debug\netcoreapp3.1\StatHockey.APILayer.deps.json
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\bin\Debug\netcoreapp3.1\StatHockey.APILayer.dll
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\bin\Debug\netcoreapp3.1\StatHockey.APILayer.pdb
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\bin\Debug\netcoreapp3.1\StatHockey.BusinessLayer.dll
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\bin\Debug\netcoreapp3.1\StatHockey.BusinessLayer.pdb
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\netcoreapp3.1\StatHockey.APILayer.csproj.CopyComplete
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\netcoreapp3.1\StatHockey.APILayer.dll
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\netcoreapp3.1\StatHockey.APILayer.pdb
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\netcoreapp3.1\StatHockey.APILayer.csproj.AssemblyReference.cache
+C:\Users\notsa\Source\Repos\Projects\StatHockeyCore\StatHockey.APILayer\obj\Debug\netcoreapp3.1\StatHockey.APILayer.GeneratedMSBuildEditorConfig.editorconfig

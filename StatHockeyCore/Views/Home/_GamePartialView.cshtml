@@ -1,0 +1,50 @@
+﻿<div id="seasonTeamGamesDiv">
+    <form id="teamGamesDataForm" method="get">
+        <div id="gameSearchControls">
+            <div id="gamesSelectionTeam">
+                <label class="gameSearchLabels">Pick a Team:</label>
+                <select id="teamSelection">
+                    <option value="">Select a team...</option>
+                </select>
+                <span id="gameSearchTeamSelectionError" class="userInputError"> </span>
+            </div>
+            <div id="gamesSelectionDateFrom">
+                <label class="gameSearchLabels">From:</label>
+                <input id="gamesFromDate" type="text" />
+                <span id="dateFromError" class="userInputError"> </span>
+            </div>
+            <div id="gamesSelectionDateTo">
+                <label class="gameSearchLabels">To:</label>
+                <input id="gamesToDate" type="text" />
+                <span id="dateToError" class="userInputError"> </span>
+            </div>
+            <div id="gameSearchSubmit">
+                <button id="gameSubmit" type="submit">Get Games</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="gamesPopupLoader" class="loadingPopupModal"></div>
+
+<!-- The Modal -->
+<div id=teamGameModal class="teamGamesModal">
+    <div class="teamGamesModalContent">
+        <div class="teamGamesModalHeader">
+            <span class="teamGamesClose">&times;</span>
+            <h2></h2>
+        </div>
+        <div class="teamGamesModalBody">
+            <div class="teamGamesTableDiv">
+            </div>
+            <img id="gamesTeamLogo" src="" />
+        </div>
+        <div class="teamGamesModalFooter">
+            <h2></h2>
+        </div>
+    </div>
+</div>
+
+
+
+

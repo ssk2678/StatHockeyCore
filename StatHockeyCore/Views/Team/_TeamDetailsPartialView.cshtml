@@ -1,0 +1,149 @@
+﻿@model  StatHockey.Models.TeamInfoViewModel
+@using System.Reflection;
+@using System.ComponentModel;
+@using System.ComponentModel.Design;
+<div class="emptyDiv"></div>
+<div class="logoTeamDetail"><a href="@Model.TeamInfo.OfficialSiteUrl" target="_blank"><img class="detailLogo" src="@Url.Content(Model.TeamInfo.LogoPath)" /></a></div>
+
+<div>
+    <div class="card card-automargin">
+        <div class="card-container">
+            <p class="card-TeamName">@($"{Model.TeamInfo.Name} ( {Model.TeamInfo.Abbreviation} )")</p>
+            <p>@($"Short Name: {Model.TeamInfo.ShortName} / Team Name: {Model.TeamInfo.TeamName}")</p>
+            <dl>
+                <dt>Location Name:</dt>
+                <dd>@Model.TeamInfo.LocationName</dd>
+                <dt>Status:</dt>
+                <dd>@(Model.TeamInfo.Active == true ? "Active" : "Not Active")</dd>
+                <dt>Conference:</dt>
+                <dd>@Model.TeamInfo.Conference.Name</dd>
+                <dt>Division:</dt>
+                <dd>@Model.TeamInfo.Division.Name</dd>
+                <dt>Franchise:</dt>
+                <dd>@Model.TeamInfo.Franchise.TeamName</dd>
+                <dt>First Year Of Play:</dt>
+                <dd>@Model.TeamInfo.FirstYearOfPlay</dd>
+                <dt>Venue:</dt>
+                <dd>@Model.TeamInfo.Venue.Name</dd>
+                <dt>City:</dt>
+                <dd>@Model.TeamInfo.Venue.City</dd>
+                <dt>Time Zone:</dt>
+                <dd>@($"{Model.TeamInfo.Venue.TimeZone.TZ} (Offset: {Model.TeamInfo.Venue.TimeZone.Offset})")</dd>
+            </dl>
+        </div>
+    </div>
+    @*<div class="emptyDiv"></div>*@
+    <div class="card card-automargin">
+        <div class="card-container">
+            <h3>@($"{Model.TeamInfo.Season}") Season Roster</h3>
+
+            <table class="center-table">
+                @if (Model.TeamInfo.Roster.Roster.Count() == 0)
+                {
+                    <tr>
+                        <td colspan="2">Not Available</td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                    </tr>
+
+                    foreach (StatHockey.BusinessLayer.BOImplementation.TeamRoster tr in Model.TeamInfo.Roster.Roster)
+                    {
+                        <tr>
+                            <td>@tr.Person.FullName</td>
+                            <td>@tr.Position.Name</td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="teamStatsSection">
+    <div class="card card-sbs">
+        <div class="card-container">
+            <h3>@($"{Model.TeamInfo.Season}") Team Performance Statistics</h3>
+
+            <table class="center-table">
+                @if (Model.TeamInfo.SeasonPerformanceStats == null)
+                {
+                    <tr>
+                        <td colspan="2">Not Available</td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+
+                    PropertyInfo[] properties = typeof(StatHockey.BusinessLayer.BOImplementation.TeamStat).GetProperties();
+                    Dictionary<string, string> propDisplayNames = TypeDescriptor.GetProperties(typeof(StatHockey.BusinessLayer.BOImplementation.TeamStat)).Cast<PropertyDescriptor>().ToDictionary(p => p.Name, p => p.DisplayName);
+
+                    foreach (PropertyInfo property in properties)
+                    {                       
+                       
+                        
+                        <tr>
+                            <td>@propDisplayNames[@property.Name]</td>
+                            <td>@(property.GetValue(Model.TeamInfo.SeasonPerformanceStats) ?? "-")</td>
+                        </tr>                       
+
+                    }
+                }
+            </table>
+        </div>
+    </div>
+    <div class="card card-sbs">
+        <div class="card-container">
+            <h3>@($"{Model.TeamInfo.Season}") Team Ranking Statistics</h3>
+
+            <table class="center-table">
+                @if (Model.TeamInfo.SeasonRankStats == null)
+                {
+                    <tr>
+                        <td colspan="2">Not Available</td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+
+                    PropertyInfo[] properties = typeof(StatHockey.BusinessLayer.BOImplementation.TeamStat).GetProperties();
+                    Dictionary<string, string> propDisplayNames = TypeDescriptor.GetProperties(typeof(StatHockey.BusinessLayer.BOImplementation.TeamStat)).Cast<PropertyDescriptor>().ToDictionary(p => p.Name, p => p.DisplayName);
+
+                    foreach (PropertyInfo property in properties)
+                    {                        
+                        
+                      
+                        <tr>
+                            <td>@propDisplayNames[@property.Name]</td>
+                            @if (property.Name == "GamesPlayed")
+                            {
+                                <td>-</td>                            }
+
+                            else
+                            {
+                                <td>@(property.GetValue(Model.TeamInfo.SeasonRankStats) ?? "-")</td>
+                            }
+
+                        </tr>
+                        
+
+                    }
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="emptyDiv fill"></div>

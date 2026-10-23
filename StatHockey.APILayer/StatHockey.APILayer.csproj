@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);CS8604;CS8600;CS8603,CS8602</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Restores access to Microsoft.Extensions.Configuration and IConfiguration -->
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.0-*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StatHockey.BusinessLayer\StatHockey.BusinessLayer.csproj" />
+  </ItemGroup>
+
+</Project>
+
+
+

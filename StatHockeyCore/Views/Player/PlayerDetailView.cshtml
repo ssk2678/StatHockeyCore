@@ -1,0 +1,35 @@
+﻿@model StatHockey.Models.PlayerInfoViewModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutTwo.cshtml";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PlayerDetailView</title>
+</head>
+<body>
+    <div id="playerDetail" class="detailView">@Html.Partial("~/Views/Player/_PlayerDetailsPartialView.cshtml")</div>
+    <div id="playerOption" class="searchOnDetail">@Html.Partial("~/Views/Home/_PlayerPartialView.cshtml")</div>
+</body>
+</html>
+
+<script>
+
+    window.onload = function () {
+        document.getElementById("playerSubmit").onclick = function () {
+
+            PlayerStatSearchSubmit();
+            return false;
+        };
+
+        let teamsDD = document.getElementById("playerTeamSelection");
+        FillTeamDropDown(teamsDD);
+        let seasonsDD = document.getElementById("seasonSelection");
+        FillSeasonDropDown(seasonsDD);
+    }
+
+   
+    
+</script>

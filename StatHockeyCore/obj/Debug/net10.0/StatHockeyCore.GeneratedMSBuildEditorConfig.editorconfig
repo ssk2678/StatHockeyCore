@@ -1,0 +1,100 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = StatHockeyCore
+build_property.RootNamespace = StatHockeyCore
+build_property.ProjectDir = C:\Users\notsa\SourceRepos\Projects\StatHockeyCore\StatHockeyCore\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 10.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\notsa\SourceRepos\Projects\StatHockeyCore\StatHockeyCore
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Game/GameDetailView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxHYW1lRGV0YWlsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Game/_GameDetailsPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxfR2FtZURldGFpbHNQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Home/_GamePartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfR2FtZVBhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Home/_PlayerPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUGxheWVyUGFydGlhbFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Home/_TeamPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfVGVhbVBhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Player/PlayerDetailView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyXFBsYXllckRldGFpbFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Player/_PlayerDetailsPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWVyXF9QbGF5ZXJEZXRhaWxzUGFydGlhbFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Shared/_LayoutTwo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRUd28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Team/TeamDetailView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxUZWFtRGV0YWlsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/Team/_TeamDetailsPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhbVxfVGVhbURldGFpbHNQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/notsa/SourceRepos/Projects/StatHockeyCore/StatHockeyCore/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

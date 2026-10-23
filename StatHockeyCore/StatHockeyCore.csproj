@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);CS8618;CS0105</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StatHockey.APILayer\StatHockey.APILayer.csproj" />
+    <ProjectReference Include="..\StatHockey.BusinessLayer\StatHockey.BusinessLayer.csproj" />
+  </ItemGroup>
+
+</Project>
+

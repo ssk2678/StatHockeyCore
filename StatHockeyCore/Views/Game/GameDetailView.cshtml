@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+@{
+    Layout = "~/Views/Shared/_LayoutTwo.cshtml";
+}
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GameDetailView</title>
+</head>
+<body>
+    <div id="gameDetail" class="detailView">@Html.Partial("~/Views/Game/_GameDetailsPartialView.cshtml")</div>
+    <div id="gameOption" class="searchOnDetail">@Html.Partial("~/Views/Home/_GamePartialView.cshtml")</div>
+</body>
+</html>
+
+<script>
+    window.onload = function () {
+
+        SetDatePickers();
+        document.getElementById("gameSubmit").onclick = function () {
+            GameStatSearchSubmit();
+            return false;
+        }
+
+        let teamsDD = document.getElementById("teamSelection");
+        FillTeamDropDown(teamsDD);
+    };
+</script>

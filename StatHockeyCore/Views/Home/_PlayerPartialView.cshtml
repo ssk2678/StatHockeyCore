@@ -1,0 +1,26 @@
+﻿<div id="playerByTeamSeasonDiv">
+    <form id="playerDataSearchForm" method="get">
+        <div id="playerSearchControls">
+            <div id="playerSearchTeamSelection">
+                <label class="playerSearchLabels">Pick a Team:</label>
+                <select id="playerTeamSelection">
+                    <option value="">Select a team...</option>
+                </select>
+                <span id="playerSearchTeamSelectionError" class="userInputError"> </span>
+            </div>
+            <div id="playerDataSearchSeasonSelection">
+                <label class="playerSearchLabels">Season:</label>
+                <select id="seasonSelection">
+                    <option value="">Select a season...</option>
+                </select>
+                <span id="seasonPickerError" class="userInputError"> </span>
+            </div>
+            <div id="playerSearchSubmit">
+                <button id="playerSubmit" type="submit">Get Players</button>
+            </div>
+        </div>
+    </form>
+    <div id="teamSeasonRosterTableDiv">
+    </div>
+    <div id="playersPopupLoader" class="loadingPopupModal"></div>
+</div>
